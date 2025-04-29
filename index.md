@@ -1,6 +1,6 @@
 ---
 title: titleee
-layout: default
+layout: defaultt
 ---
 
 # heading 1
@@ -10,4 +10,7 @@ layout: default
 # heading 5
 # heading 6
 
-text
+text 
+| a | a |
+| a | a |
+| a | a |
