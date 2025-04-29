@@ -1,6 +1,6 @@
 ---
 title: titleee
-layout: defaultt
+layout: yo
 ---
 
 # heading 1
