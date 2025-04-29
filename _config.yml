@@ -1,10 +1,6 @@
-# Site settings
-title: siteTitle
-email: none@example.com
-description: >- 
-  Write a short description of your site here.
+
 baseurl: "" 
-url: "http://yourdomain.com" 
+url: "https://fflip0.github.io/SSG/" 
 
 
 theme: null

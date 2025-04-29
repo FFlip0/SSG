@@ -11,6 +11,9 @@ layout: yo
 # heading 6
 
 text 
+
+[table](table.html)
+
 | a | a |
 | - | - |
 | a | a |
