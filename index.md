@@ -1,6 +1,6 @@
 ---
 title: home
-layout: yo2
+layout: yo
 ---
 
 # heading 1
