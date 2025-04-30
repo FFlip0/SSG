@@ -75,7 +75,6 @@
             margin: 1rem;
             padding: 1rem;
             display: flex; /* Enable flexbox for toc layout */
-            flex-direction: row-reverse; /* Move toc to the right */
             justify-content: flex-start; /* Push content to the left */
         }
 
@@ -277,11 +276,7 @@
     </style>
 </head>
 <body>
-    <div class="toc">
-        <h2>Table of Contents</h2>
-        <ul id="toc">
-            </ul>
-    </div>
+    
 
 
         <main class="content">
@@ -398,10 +393,14 @@ console.log(`Hello, ${name}!`);
 
 
 
-            </div>-->
+            </div>
 
         </main>
-
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul id="toc">
+                </ul>
+        </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
