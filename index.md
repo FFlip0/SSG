@@ -63,6 +63,7 @@ print("python code block")
 
 
 Table
+
 | 1 | 2 | 3 |
 | - | - | - |
 | 2 | 4 | 6 |
