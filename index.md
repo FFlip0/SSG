@@ -3,9 +3,6 @@ title: home
 layout: yo2
 ---
 
-#
-
-
 # heading 1
 ## heading 2
 ### heading 3
@@ -13,7 +10,7 @@ layout: yo2
 ##### heading 5
 ###### heading 6
 
-text 
+text
 
 _italic 1,_
 *italic 2*
@@ -34,14 +31,13 @@ ___bold & italic 1,___
 2. Numbered list
 3. Numbered list
 
-
 * List
     - Sub List
     1. Sub List
+
 1. List
     - Sub list
     1. Sub list
-
 
 [link](https://www.example.com),
 [link with hover](https://example.com "hover title")
@@ -50,28 +46,24 @@ ___bold & italic 1,___
 ***
 ___
 
+> Blockquote with some content.
+> Here is another line.
 
-> Blockquote
-> 
-> .
+
 
 ```
 code block
 ```
+
+
+
 ```python
 print("python code block")
 ```
+
 
 Table
 | 1 | 2 | 3 |
 | - | - | - |
 | 2 | 4 | 6 |
 | 3 | 6 | 9 |
-
-
-Aligned Table
-| Left | Center | Right |
-| :--- | :----: | ---: |
-| Left |  Center  | Right |
-
-
