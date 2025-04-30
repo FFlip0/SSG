@@ -1,5 +1,5 @@
 ---
-layout: table
+layout: yo2
 title: Table Test
 ---
 
