@@ -326,19 +326,63 @@
                       
                 </div>-->
                 <div id="navs">
-                    <div class="pagination">
-                      {% if page.previous.url %}
-                        <a class="prev" href="{{ page.previous.url | relative_url }}">&laquo; {{ page.previous.title | truncate: 30 }}</a>
-                      {% else %}
-                        <span class="prev disabled">&laquo; Previous</span>
-                      {% endif %}
-                  
-                      {% if page.next.url %}
-                        <a class="next" href="{{ page.next.url | relative_url }}">{{ page.next.title | truncate: 30 }} &raquo;</a>
-                      {% else %}
-                        <span class="next disabled">Next &raquo;</span>
-                      {% endif %}
-                    </div>
+                    <div class="pagination-container">
+                        <div class="pagination">
+                          {% if page.previous %}
+                            <a class="prev" href="{{ page.previous.url }}">&laquo; </a>
+                          {% else %}
+                            <span class="prev disabled">&laquo; </span>
+                          {% endif %}
+                      
+                          {% if page.next %}
+                            <a class="next" href="{{ page.next.url }}">&raquo;</a>
+                          {% else %}
+                            <span class="next disabled">&raquo;</span>
+                          {% endif %}
+                        </div>
+                      </div>
+                      
+                      <style>
+                        .pagination-container {
+                          width: 100%;
+                          margin: 2rem 0;
+                        }
+                        
+                        .pagination {
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: center;
+                        }
+                        
+                        .pagination a, .pagination span {
+                          padding: 8px 16px;
+                          text-decoration: none;
+                          border-radius: 4px;
+                          font-weight: 500;
+                        }
+                        
+                        .pagination a {
+                          background-color: #f8f9fa;
+                          color: #007bff;
+                          border: 1px solid #dee2e6;
+                          transition: background-color 0.3s, color 0.3s;
+                          cursor: pointer;
+                          display: inline-block;
+                        }
+                        
+                        .pagination a:hover {
+                          background-color: #007bff;
+                          color: white;
+                          text-decoration: none;
+                        }
+                        
+                        .pagination .disabled {
+                          color: #6c757d;
+                          background-color: #f8f9fa;
+                          border: 1px solid #dee2e6;
+                          cursor: not-allowed;
+                        }
+                      </style>
                   </div> 
               </div>
 
