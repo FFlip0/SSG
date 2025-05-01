@@ -1,6 +1,7 @@
 ---
 title: syntax
 layout: yo
+path: / syntax.md
 ---
 
 

@@ -58,231 +58,244 @@
         --link: #1976d2;
         --link-foreground: #fafafa;
         --link-visited: #9c27b0;
-        --link-hover: #1e88e5; /* Slightly brighter blue for hover */
+        --link-hover: #1e88e5;
 
         /* Code */
         --code-background: #141414;
         --code-foreground: #fafafa;
         --code-highlight: #262626;
+    }
+    body {
+        background-color: var(--background);
+        color: var(--foreground);
+        font-family: "Ubuntu", sans-serif;
+        line-height: 1.6;
+        margin: 1rem;
+        padding: 1rem;
+        display: flex; 
+        justify-content: flex-start; 
+    }
 
+    .toc {
+        display: none;
+        margin-left: 20px;
+    }
 
+    .pagePath {
+        display: none;
+    }
+
+    @media (min-width: 1024px) {
+        main {
+            flex-grow: 1;
         }
- body {
-            background-color: var(--background);
+        .content {
+            flex-grow: 1; 
+            padding: 1rem 3rem;
+            max-width: calc(100% - 250px);
+        }
+
+        .pagePath {
             color: var(--foreground);
-            font-family: "Ubuntu", sans-serif;
-            line-height: 1.6;
-            margin: 1rem;
-            padding: 1rem;
-            display: flex; /* Enable flexbox for toc layout */
-            justify-content: flex-start; /* Push content to the left */
-        }
-
-        /* Initially hide the toc */
-        .toc {
-            display: none;
-            margin-left: 20px; /* Add left margin instead of right */
-        }
-
-        @media (min-width: 1024px) {
-            main {
-                padding: 1rem 3rem;
-                flex-grow: 1; /* Allow main to take up remaining space */
-                max-width: calc(100% - 250px); /* Leave space for the TOC */
-            }.content {
-                flex-grow: 1;
-            }
-
-            /* TOC */
-            .toc {
-                width: 220px; /* Adjust width as needed */
-                margin-left: 30px; /* Add left margin */
-                padding: 10px 0; /* Adjust vertical padding */
-                border: none; /* Remove the border */
-                border-radius: 0; /* Remove border radius */
-                position: sticky; /* Make it stick on scroll */
-                top: 20px; /* Adjust as needed */
-                color: var(--foreground);
-                display: block; /* Override the default 'none' to show it */
-                background-color: transparent; /* Make background transparent if needed */
-                border: 1px solid var(--border);
-                border-radius: 5px;
-                padding: 1rem;
-                height: fit-content;
-                margin-right: 0; /* Ensure no right margin on TOC */
-            }
-
-            .toc h2 {
-                font-size: 1em; /* Adjust font size */
-                margin-top: 0;
-                margin-bottom: 10px;
-                color: var(--muted-text); /* Use muted text color */
-                text-transform: uppercase; /* Make it uppercase */
-                letter-spacing: 0.05em; /* Add some letter spacing */
-            }
-
-            .toc ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .toc ul li {
-                margin-bottom: 5px; /* Reduce bottom margin */
-            }
-
-            .toc ul li a {
-                text-decoration: none;
-                color: var(--foreground); /* Use foreground color for links */
-                display: block;
-                padding: 5px 0;
-                font-size: 0.9em; /* Adjust font size of links */
-            }
-
-            .toc ul li a:hover {
-                text-decoration: none;
-                color: var(--link-hover); /* Change color on hover */
-                padding-left: 0;
-                font-weight: bold;
-            }
-
-
-        }
-
-
-        /* Default Styles*/
-        h1, h2, h3, h4, h5, h6 {
-            color: var(--primary);
-            line-height: 1.2;
-            margin-top: 0.5rem;
-            margin-bottom: 1rem;
-            scroll-margin-top: 60px; /* Adjust to prevent overlap with sticky toc */
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-        }
-
-        a {
-            color: var(--link);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: var(--link-hover);
-        }
-
-        a:visited {
-            color: var(--link-visited);
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px solid var(--border);
-            margin: 2rem 0;
-        }
-
-        ul, ol {
-            margin-left: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        pre {
-            background-color: var(--code-background);
-            color: var(--code-foreground);
-            padding: 1rem;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-
-        code {
-            font-family: monospace, monospace;
-            background-color: var(--code-highlight);
-            color: var(--code-foreground);
-            padding: 0.2rem 0.4rem;
-            border-radius: 3px;
-        }
-
-        pre code {
+            display: block;
             background-color: transparent;
-        }
-
-        blockquote {
-            border-left: 3px solid var(--border);
-            padding-left: 1rem;
-            margin: 1.5rem 0;
-            color: var(--muted-text);
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        textarea {
-            background-color: var(--input);
-            color: var(--input-foreground);
-            border: 1px solid var(--input-border);
-            padding: 0.8rem;
-            border-radius: 5px;
-            width: 100%;
-            box-sizing: border-box;
-            margin-bottom: 1rem;
-        }
-
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type="password"]:focus,
-        textarea:focus {
-            border-color: var(--input-focus);
-            outline: none;
-        }
-
-        button {
-            background-color: var(--primary);
-            color: var(--primary-foreground);
-            border: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: var(--primary-hover);
-        }
-
-        button:active {
-            background-color: var(--primary-active);
-        }
-
-        table {
-            border-collapse: collapse;
-            margin-bottom: 1.5rem;
-        }
-
-        th, td {
             border: 1px solid var(--border);
-            padding: 0.8rem;
-            text-align: left;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 0;
         }
 
-        th {
-            background-color: var(--secondary-background);
-            color: var(--secondary-foreground);
+        .pagePath p {
+            margin: 0;
         }
+
+        .toc {
+            width: 220px;
+            margin-left: 30px;
+            padding: 10px 0;
+            border: none;
+            border-radius: 0;
+            position: sticky;
+            top: 20px;
+            color: var(--foreground);
+            display: block;
+            background-color: transparent;
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            padding: 1rem;
+            height: fit-content;
+            margin-right: 0;
+        }
+
+        .toc h2 {
+            font-size: 1em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--muted-text);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toc ul li {
+            margin-bottom: 5px;
+        }
+
+        .toc ul li a {
+            text-decoration: none;
+            color: var(--foreground);
+            display: block;
+            padding: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .toc ul li a:hover {
+            text-decoration: none;
+            color: var(--link-hover);
+            padding-left: 0;
+            font-weight: bold;
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--primary);
+        line-height: 1.2;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        scroll-margin-top: 60px;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    a {
+        color: var(--link);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: var(--link-hover);
+    }
+
+    a:visited {
+        color: var(--link-visited);
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid var(--border);
+        margin: 2rem 0;
+    }
+
+    ul, ol {
+        margin-left: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    pre {
+        background-color: var(--code-background);
+        color: var(--code-foreground);
+        padding: 1rem;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+
+    code {
+        font-family: monospace, monospace;
+        background-color: var(--code-highlight);
+        color: var(--code-foreground);
+        padding: 0.2rem 0.4rem;
+        border-radius: 3px;
+    }
+
+    pre code {
+        background-color: transparent;
+    }
+
+    blockquote {
+        border-left: 3px solid var(--border);
+        padding-left: 1rem;
+        margin: 1.5rem 0;
+        color: var(--muted-text);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        background-color: var(--input);
+        color: var(--input-foreground);
+        border: 1px solid var(--input-border);
+        padding: 0.8rem;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    textarea:focus {
+        border-color: var(--input-focus);
+        outline: none;
+    }
+
+    button {
+        background-color: var(--primary);
+        color: var(--primary-foreground);
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--primary-hover);
+    }
+
+    button:active {
+        background-color: var(--primary-active);
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+    }
+
+    th, td {
+        border: 1px solid var(--border);
+        padding: 0.8rem;
+        text-align: left;
+    }
+
+    th {
+        background-color: var(--secondary-background);
+        color: var(--secondary-foreground);
+    }
+
     </style>
 </head>
 <body>
     
 
+        <main>
+            <div class="pagePath"><p>{{ page.path }}</p></div>
 
-        <main class="content">
-            <!--<h1>{{ page.title }}</h1>-->
+            <div class="content">
             {{ content }}
-
+            </div>
 
 
             <!--<div>
