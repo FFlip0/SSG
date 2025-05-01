@@ -289,23 +289,24 @@
         <main>
             <div class="pagePath">
                 <nav class="breadcrumbs">
-                    <p>
-                      <a href="{{ site.baseurl }}/">Home</a>
-                      {% assign parts = page.path | split: '/' %}
-                      {% assign link = "" %}
-                      {% for part in parts %}
-                        {% assign clean_part = part | remove: ".md" %}
-                        {% assign link = link | append: "/" | append: part %}
-                        {% unless part contains "_" %}
-                          {% if forloop.last %}
-                            \ {{ clean_part }}
-                          {% else %}
-                            \ <a href="{{ site.baseurl }}{{ link }}">{{ clean_part }}</a>
-                          {% endif %}
-                        {% endunless %}
-                      {% endfor %}
-                    </p>
-                  </nav>                  
+                    <a href="{{ site.baseurl }}/">Home</a>
+                    {% assign parts = page.path | split: '/' %}
+                    {% assign link = "" %}
+                    {% for part in parts %}
+                      {% assign clean_part = part | remove: ".md" | capitalize %}
+                      {% assign link = link | append: "/" | append: part %}
+                      {% unless part contains "_" %}
+                        {% if link == page.url %}
+                          {% if forloop.first == false %}\ {% endif %}
+                          {{ clean_part }}
+                        {% else %}
+                          {% if forloop.first == false %}\ {% endif %}
+                          <a href="{{ site.baseurl }}{{ link }}">{{ clean_part }}</a>
+                        {% endif %}
+                      {% endunless %}
+                    {% endfor %}
+                  </nav>
+                  
               </div>
               
 
