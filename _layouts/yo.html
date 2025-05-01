@@ -309,7 +309,7 @@
         <main>
             <div class="header">
                 <div id="breadcrumb">{{ page.path }}</div>
-                <div id="navs">
+                <!--<div id="navs">
                     <div class="navigation-buttons">
                         {% if page.previous %}
                           <a href="{{ page.previous.url }}">
@@ -324,7 +324,22 @@
                         {% endif %}
                       </div>
                       
-                </div> 
+                </div>-->
+                <div id="navs">
+                    <div class="pagination">
+                      {% if page.previous.url %}
+                        <a class="prev" href="{{ page.previous.url | relative_url }}">&laquo; {{ page.previous.title | truncate: 30 }}</a>
+                      {% else %}
+                        <span class="prev disabled">&laquo; Previous</span>
+                      {% endif %}
+                  
+                      {% if page.next.url %}
+                        <a class="next" href="{{ page.next.url | relative_url }}">{{ page.next.title | truncate: 30 }} &raquo;</a>
+                      {% else %}
+                        <span class="next disabled">Next &raquo;</span>
+                      {% endif %}
+                    </div>
+                  </div> 
               </div>
 
               
