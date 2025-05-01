@@ -291,7 +291,21 @@
     
 
         <main>
-            <div class="pagePath"><p>{{ page.path }}</p></div>
+            <div class="pagePath"><p>
+                {% assign parts = page.path | split: '/' %}
+                {% assign link = "" %}
+                </p>
+                <nav class="breadcrumbs">
+                  {% for part in parts %}
+                    {% assign clean_part = part | remove: ".md" | capitalize %}
+                    {% assign link = link | append: "/" | append: part %}
+                    {% unless part contains "_" %}
+                      <a href="{{ site.baseurl }}{{ link }}">{{ clean_part }}</a>
+                      {% unless forloop.last %} › {% endunless %}
+                    {% endunless %}
+                  {% endfor %}
+                </nav>
+                </p></div>
 
             <div class="content">
             {{ content }}

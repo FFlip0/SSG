@@ -1,7 +1,6 @@
 ---
 title: home
 layout: yo
-path: / index.md
 ---
 
 
