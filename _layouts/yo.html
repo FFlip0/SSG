@@ -81,7 +81,7 @@
         margin-left: 20px;
     }
 
-    .pagePath {
+    .header {
         display: none;
     }
 
@@ -95,15 +95,35 @@
             max-width: calc(100% - 250px);
         }
 
-        .pagePath {
-            color: var(--foreground);
-            display: block;
-            background-color: transparent;
-            border: 1px solid var(--border);
-            border-radius: 5px;
-            padding: 1rem;
-            margin: 0;
-        }
+        .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+}
+
+#breadcrumb {
+    flex-grow: 1; 
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+#navs {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+
+
 
         .toc {
             width: 220px;
@@ -287,9 +307,26 @@
     
 
         <main>
-            <div class="pagePath">
-                {% include breadcrumb.html %} 
+            <div class="header">
+                <div id="breadcrumb">{{ page.path }}</div>
+                <div id="navs">
+                    <div class="navigation-buttons">
+                        {% if page.previous %}
+                          <a href="{{ page.previous.url }}">
+                            <a class="backward-button">Back</button>
+                          </a>
+                        {% endif %}
+                        
+                        {% if page.next %}
+                          <a href="{{ page.next.url }}">
+                            <a class="forward-button">Forward</button>
+                          </a>
+                        {% endif %}
+                      </div>
+                      
+                </div> 
               </div>
+
               
 
             <div class="content">
