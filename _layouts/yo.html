@@ -58,7 +58,7 @@
         /* Link */
         --link: #1976d2;
         --link-foreground: #fafafa;
-        --link-visited: #9c27b0;
+        --link-visited: #2c44cc;
         --link-hover: #1e88e5;
 
         /* Code */
@@ -214,6 +214,9 @@
 
     a:visited {
         color: var(--link-visited);
+    }
+    a:visited:hover {
+        color: var(--link-hover);
     }
 
     hr {
@@ -467,7 +470,6 @@ console.log(`Hello, ${name}!`);
             tocElement.innerHTML = tocHTML;
         });
     </script>
-    <!--Latex--><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    
 </body>
 </html>
