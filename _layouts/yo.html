@@ -83,7 +83,9 @@
             margin: 0;
             padding: 2rem;
             border-left: var(--border) solid 1px;
-            min-height: 100vh;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         .content {
             flex-grow: 1; 
@@ -171,7 +173,9 @@
         }
     }
 
-
+    html, body {
+    height: 100%;
+}
 
 
     body {
