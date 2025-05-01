@@ -1,0 +1,19 @@
+<nav class="breadcrumb" aria-label="breadcrumb">
+    <ol>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/">Home</a>
+      </li>
+      {% assign path_parts = page.url | split: '/' %}
+      {% assign breadcrumb_path = site.baseurl %}
+  
+      {% for part in path_parts %}
+        {% if part != '' %}
+          {% assign breadcrumb_path = breadcrumb_path | append: '/' | append: part %}
+          <li class="breadcrumb-item">
+            <a href="{{ breadcrumb_path | remove_first: site.baseurl }}">{{ part | capitalize }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </nav>
+  

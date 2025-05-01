@@ -288,36 +288,7 @@
 
         <main>
             <div class="pagePath">
-                <!--<nav class="breadcrumbs">
-                    <a href="{{ site.baseurl }}/">Home</a>
-                    {% assign parts = page.path | split: '/' %}
-                    {% assign link = "" %}
-                    {% for part in parts %}
-                      {% assign clean_part = part | remove: ".md" | capitalize %}
-                      {% assign link = link | append: "/" | append: part %}
-                      {% unless part contains "_" %}
-                        {% if link == page.url %}
-                          {% if forloop.first == false %}\ {% endif %}
-                          {{ clean_part }}
-                        {% else %}
-                          {% if forloop.first == false %}\ {% endif %}
-                          <a href="{{ site.baseurl }}{{ link }}">{{ clean_part }}</a>
-                        {% endif %}
-                      {% endunless %}
-                    {% endfor %}
-                  </nav>-->
-                  <div id="breadcrumbs">
-                    {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-                    <a href="/">Home</a>
-                    {% for crumb in crumbs offset: 1 %}
-                      {% if forloop.last %}
-                        / {{ page.title }}
-                      {% else %}
-                        / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-                      {% endif %}
-                    {% endfor %}
-                    </div>
-                  
+                {% include breadcrumb.html %} 
               </div>
               
 
