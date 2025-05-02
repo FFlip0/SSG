@@ -15,6 +15,8 @@ path: / syntax.md
 
 text
 
+$$latex$$
+
 _italic 1,_
 *italic 2*
 
