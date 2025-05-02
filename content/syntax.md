@@ -1,7 +1,6 @@
 ---
 title: syntax
 layout: yo
-path: / syntax.md
 ---
 
 
@@ -15,7 +14,9 @@ path: / syntax.md
 
 text
 
-$$latex$$
+$latex1$
+
+$$latex2$$
 
 _italic 1,_
 *italic 2*
@@ -73,3 +74,4 @@ Table
 | - | - | - |
 | 2 | 4 | 6 |
 | 3 | 6 | 9 |
+

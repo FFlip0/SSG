@@ -3,11 +3,20 @@ title: home
 layout: yo
 ---
 
+# home
 
-[/syntax.md](syntax.md)
+i dunno what this is 
 
-[/stuff/test](stuff/test.md)
+## content
 
-[Link Text](SSG/test2.md)
+- [syntax](content/syntax.md)
 
-$$latex$$
+---
+
+
+- digital
+    - pc
+        - [file formats](content/digital/pc/fileFormats.md) 
+
+
+
