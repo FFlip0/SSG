@@ -17,9 +17,6 @@ layout: yo
 | "Duotrigesimal"    | Base 32 | `0-9 A-V`         |                                  |
 | "Tetrasexagesimal" | Base 64 | `0-9 A-Z a-z + /` |                                  |
 
-- These are like the most common bases.
-- 
-
 
 ### Theorical higher bases (with unicode)
 
