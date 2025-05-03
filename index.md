@@ -15,8 +15,9 @@ i dunno what this is
 
 
 - digital
-    - pc
-        - [file formats](content/digital/pc/fileFormats.md) 
+	- pc
+		- [file formats](content/digital/pc/fileFormats.md) 
+
 
 
 
