@@ -2,6 +2,8 @@
 title: random
 layout: yo
 ---
+
+
 # random
 
 ## Bases

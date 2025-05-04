@@ -14,6 +14,8 @@ i dunno what this is
 	- [random](content/digital/random.md)
 	- pc
 		- [file formats](content/digital/pc/fileFormats.md) 
+	- networking
+		- [protocols and ports](protocolsAndPorts.md)
 
 
 
