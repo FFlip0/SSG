@@ -16,6 +16,8 @@ i dunno what this is
 		- [file formats](content/digital/pc/fileFormats.md) 
 	- networking
 		- [protocols and ports](protocolsAndPorts.md)
+- math
+	- 
 
 
 
