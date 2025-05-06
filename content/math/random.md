@@ -3,6 +3,12 @@ title: random
 layout: yo
 ---
 
+$latexxx$
+
+
+$1+1$
+
+
 
 
 # Random 
