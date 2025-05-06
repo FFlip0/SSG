@@ -1,6 +1,6 @@
 ---
 title: random
-layou: yo
+layout: yo
 ---
 
 
