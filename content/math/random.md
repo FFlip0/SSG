@@ -13,18 +13,27 @@ layout: yo
 # Formulas
 ## Linear Equations
 
+
 $m=\frac{rise}{run}$
+
 $m=\frac{y_2-y_1}{x_2-x_1}$
 
+
 $y=mx+b$
+
 $y=mx+c$
+
 
 $Ax+By=C$
 
+
 $y-y_1=m(x-x_1)$
 
+
 $\frac{x}{a}+\frac{y}{b}=1$
+
 $a=x-intercept$
+
 $b=y-intercept$
 
 

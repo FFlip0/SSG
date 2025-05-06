@@ -5,7 +5,7 @@ layout: yo
 
 ## content
 
-  
+  $latex$
 
 - [syntax](content/syntax.md)
 - digital
