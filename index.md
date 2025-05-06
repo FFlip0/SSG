@@ -8,18 +8,31 @@ layout: yo
   
 
 - [syntax](content/syntax.md)
+
 - digital
-    - [random](content/digital/random.md)
-    - -notes
-        - [CompTIASecurityPlusSYO-701](content/digital/-notes/CompTIASecurityPlusSYO-701.md)
-    - pc
-        - [file formats](content/digital/pc/fileFormats.md)
-    - networking
-        - [protocols and ports](content/digital/networking/protocolsAndPorts.md)
+
+	- [random](content/digital/random.md)
+
+	  - -notes
+
+		- [CompTIASecurityPlusSYO-701](content/digital/-notes/CompTIASecurityPlusSYO-701.md)
+
+	- pc
+
+		- [file formats](content/digital/pc/fileFormats.md)
+	
+	 - networking
+	
+		- [protocols and ports](content/digital/networking/protocolsAndPorts.md)
+
 - math
-    - [random](content/math/random.md)
+
+	- [random](content/math/random.md)
+  
 - science
-    - [earth](content/science/earth.md)
+
+	- [earth](content/science/earth.md)
+ 
 
 
 
