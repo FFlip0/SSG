@@ -13,39 +13,66 @@ layout: yo
 # Formulas
 ## Linear Equations
 
+---
+$m=\frac{rise}{run}=\frac{y_2-y_1}{x_2-x_1}$
 
-$m=\frac{rise}{run}$
+---
 
-$m=\frac{y_2-y_1}{x_2-x_1}$
-
-
+Slope-Intercept Form
 $y=mx+b$
-
 $y=mx+c$
 
-
+---
+Standard form
 $Ax+By=C$
 
-
+---
+Point-Slope form
 $y-y_1=m(x-x_1)$
 
 
+---
+Distance
+$d= \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$
+
+---
+Midpoint
+$m=(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2})$
+
+---
+Intercept form
 $\frac{x}{a}+\frac{y}{b}=1$
-
 $a=x-intercept$
-
 $b=y-intercept$
+
+---
+Perpendicular Lines
+$m_1\times m_2=-1$
+$m_2=-\frac{1}{m_1}$
+
+---
+Circle
+$(x-a)^2+(y-b)^2=r^2$
+$(a,b) =$ Centre point of the circle
+$r =$ Radius
 
 
 # Types of questions
 ## Linear Equations
 
-### 1 Find $x$
+### 1) 
+Find $x$
+
+---
 $3x+5=14$
 
 $3x=9$
+
 $x=3$
-### 2 Graph the equation
+### 2)
+Graph the equation
+
+---
 $y=2x-3$
 
 $m=\frac{rise}{run}=\frac{2}{1}$

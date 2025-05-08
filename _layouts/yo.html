@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Icons ---><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+    <link rel="icon" href="icon.svg" sizes="any">
     <title>{{ page.title | default: site.title }}</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
@@ -112,9 +113,12 @@
         }
 
         #rightSidebar {
-            margin: 0;
+            margin: 1rem;
+            margin-left: 0;
             display: block;
             width: 300px;
+            border: var(--border) solid 1px;
+            border-radius: 5px;
         }
 
 
@@ -165,6 +169,7 @@
             padding: 1rem;
             margin: 1rem;
             height: fit-content;
+            ;
         }
         
         .toc h2 {
