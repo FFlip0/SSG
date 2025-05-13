@@ -62,10 +62,8 @@ $r =$ Radius
 
 ### 1) 
 Find $x$
-
----
 $3x+5=14$
-
+---
 $3x=9$
 
 $x=3$
@@ -84,5 +82,36 @@ Basically just take $b(y-intercept)=(0,-3)$. Now that you have a point take that
 
 
 ## Quadratics
+### Non-Monic Factorisation 
+Find $x$
+$x^2+3x+2=0$
+---
+$a+b=3$ 
+$a\times b=2$
+$a=2$
+$b=1$
+
+$(x+2)(x+1)=0$
+
+| $x+2=0$ | $x+1=0$ |
+| ------- | ------- |
+| $x=-2$  | $x=-1$  |
+$x=-2,-1$
+
+### Monic Factorisation
+Find $x$
+$2x^2+3x+1=0$
+---
+$a+b=3$
+$a\times b=1\times 2$
+$a=1$ 
+$b=2$
+
+$(x+1)(x+2)=0$
+
+| $x+1=0$ | $x+2=0$ |
+| ------- | ------- |
+| $x=-1$  | $x=-2$  |
+$x=-1,-2$
 
 

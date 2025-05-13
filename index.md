@@ -6,14 +6,16 @@ layout: yo
 
 
 
-- [syntax](misc/syntax.md)
 
 - # docs
 	- ## digital
 		- [random](docs/digital/random.md)
+		- [cryptography](docs/digital/cryptography.md)
 		- ### pc
 			- [file formats](docs/digital/pc/fileFormats.md)
-		 - #### networking
+			- [terminal](docs/digital/pc/terminal.md)
+			- [text characters](docs/digital/pc/textCharacters)
+		 - ### networking
 			- [protocols and ports](docs/digital/networking/protocolsAndPorts.md)
 	- ## math
 		- [random](docs/math/random.md)
