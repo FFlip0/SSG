@@ -3,395 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Icons ---><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
-    <link rel="icon" href="icon.svg" sizes="any">
-    <title>{{ page.title | default: site.title }}</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-        :root {
-        /* Base */
-        --background: #0a0a0a;
-        --foreground: #fafafa;
-        --border: #333333;
-        --ring: #cccccc;
-        --overlay: rgba(0, 0, 0, 0.5);
-
-        /* Primary */
-        --primary: #fafafa;
-        --primary-foreground: #191919;
-        --primary-hover: #e0e0e0;
-        --primary-active: #b3b3b3;
-
-        /* Secondary */
-        --secondary: #444444;
-        --secondary-foreground: #fafafa;
-        --secondary-hover: #555555;
-        --secondary-active: #666666;
-        --secondary-background: #141414;
-
-        /* Accent */
-        --accent: #cccccc;
-        --accent-foreground: #191919;
-        --accent-hover: #e0e0e0;
-        --accent-active: #aaaaaa;
-
-        /* Muted */
-        --muted: #717171;
-        --muted-foreground: #fafafa;
-        --muted-text: #a3a3a3;
-
-        /* Input */
-        --input: #1e1e1e;
-        --input-foreground: #fafafa;
-        --input-border: #333333;
-        --input-focus: #444444;
-
-        /* Feedback */
-        --success: #4caf50;
-        --success-foreground: #fafafa;
-        --warning: #ff9800;
-        --warning-foreground: #191919;
-        --fail: #d32f2f;
-        --fail-foreground: #fafafa;
-        --info: #2196f3;
-        --info-foreground: #fafafa;
-
-        /* Link */
-        --link: #1976d2;
-        --link-foreground: #fafafa;
-        --link-visited: #3027af;
-        --link-hover: #1e88e5;
-
-        /* Code */
-        --code-background: #141414;
-        --code-foreground: #fafafa;
-        --code-highlight: #262626;
-    }
-
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        background-color: var(--background);
-        color: var(--foreground);
-        /*font-family: "Ubuntu", sans-serif;*/
-        font-family: "Inter", sans-serif;
-        font-size: 16px;
-        line-height: 1.6;
-        display: flex;
-        flex-direction: row;
-    }
-
-    main {
-        flex: 1;
-        margin: 1rem;
-        padding: 1rem;
-    }
-
-
-
-
-
-    .toc {display: none;}
-    .header {display: none;}
-
-    #rightSidebar {
-        display: none;
-        
-    }
-
-    @media (min-width: 1024px) {
-
-        
-        main {
-            margin: 0;
-            padding: 0;
-        }
-
-        #rightSidebar {
-            margin: 1rem;
-            margin-left: 0;
-            display: block;
-            width: 300px;
-            border: var(--border) solid 1px;
-            border-radius: 5px;
-        }
-
-
-        .content {
-            padding: 1rem;
-            padding: 3rem;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: transparent;
-            padding: 1rem;
-            padding-left: 3rem;
-        }
-
-        #breadcrumb {
-            flex-grow: 1; 
-            border: 1px solid var(--border);
-            border-radius: 5px;
-            padding: 1rem;
-            display: inline-block;
-            margin-right: 0.5rem;
-        }
-
-        #homeBTN {
-            display: flex;
-            justify-content: flex-end;
-            border: 1px solid var(--border);
-            border-radius: 5px;
-            padding: 0.5rem;
-            display: inline-block;
-            margin-left: 0.5rem;
-        }
-        
-        #homeBTN span {
-            line-height: 1.6;
-            font-size: 1.7rem;
-        }
-
-        .toc {
-            display: block;
-            color: var(--foreground);
-            background-color: transparent;
-            border: 1px solid var(--border);
-            border-radius: 5px;
-            padding: 1rem;
-            margin: 1rem;
-            height: fit-content;
-            ;
-        }
-        
-        .toc h2 {
-            font-size: 1rem;
-            margin-top: 0;
-            margin-bottom: 10px;
-            color: var(--muted-text);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .toc ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .toc ul li {
-            margin-bottom: 5px;
-        }
-        
-        .toc ul li a {
-            text-decoration: none;
-            color: var(--foreground);
-            display: block;
-            padding: 5px 0;
-            font-size: 0.9em;
-        }
-        
-        .toc ul li a:hover {
-            text-decoration: none;
-            color: var(--link-hover);
-            padding-left: 0;
-            font-weight: bold;
-        }
-    }
-
-    /*----------------------------------------------------------------------*/
-
-
-
-
-    h1, h2, h3, h4, h5, h6 {
-        color: var(--primary);
-        line-height: 1.2;
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
-        scroll-margin-top: 60px;
-    }
-
-    p {
-        margin-bottom: 1.5rem;
-    }
-
-    a {
-        color: var(--link);
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-        color: var(--link-hover);
-    }
-
-    a:visited {
-        color: var(--link-visited);
-    }
-    a:visited:hover {
-        color: var(--link-hover);
-    }
-
-    hr {
-        border: 0;
-        border-top: 1px solid var(--border);
-        margin: 2rem 0;
-    }
-
-    ul, ol {
-        margin-left: 0.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    li {
-        margin-bottom: 0.5rem;
-    }
-
-    pre {
-        background-color: var(--code-background);
-        color: var(--code-foreground);
-        padding: 1rem;
-        border-radius: 5px;
-        overflow-x: auto;
-    }
-
-    code {
-        font-family: monospace, monospace;
-        background-color: var(--code-highlight);
-        color: var(--code-foreground);
-        padding: 0.2rem 0.4rem;
-        border-radius: 3px;
-    }
-
-    pre code {
-        background-color: transparent;
-    }
-
-    blockquote {
-        border-left: 3px solid var(--border);
-        padding-left: 1rem;
-        margin: 1.5rem 0;
-        color: var(--muted-text);
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    textarea {
-        background-color: var(--input);
-        color: var(--input-foreground);
-        border: 1px solid var(--input-border);
-        padding: 0.8rem;
-        border-radius: 5px;
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 1rem;
-    }
-
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    input[type="password"]:focus,
-    textarea:focus {
-        border-color: var(--input-focus);
-        outline: none;
-    }
-
-    button {
-        background-color: var(--primary);
-        color: var(--primary-foreground);
-        border: none;
-        padding: 0.8rem 1.5rem;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: var(--primary-hover);
-    }
-
-    button:active {
-        background-color: var(--primary-active);
-    }
-
-    table {
-        border-collapse: collapse;
-        margin-bottom: 1.5rem;
-    }
-
-    th, td {
-        border: 1px solid var(--border);
-        padding: 0.8rem;
-        text-align: left;
-    }
-
-    th {
-        background-color: var(--secondary-background);
-        color: var(--secondary-foreground);
-    }
-
-    </style>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mainNav.css">
+    <link rel="stylesheet" href="css/toc.css">
+    <link rel="stylesheet" href="css/headingIndent.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div class="header">
-            <div id="breadcrumb">{{ page.path }}</div>
-            <div id="homeBTN"><a href="{{ site.baseurl }}"><span class="material-symbols-outlined">home</span></a></div> 
-        </div>
-
-        <div class="content">
-            {{ content }}
-        </div>
-    </main>
-    
-    <div id="rightSidebarBox">
-        <div id="rightSidebar">
-            <div class="toc">
-                <h2>Table of Contents</h2>
-                <ul id="toc"></ul>
+    <div class="container">
+        <main>
+            <nav class="main-nav">
+                <div class="nav-left">
+                    {{ page.path }}
+                </div>
+                <div class="nav-right">
+                    <a href="#" class="home-btn">
+                        <span class="material-icons">home</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="content-wrapper">
+                <div class="content-area">
+                    {{ content }}
+                </div>
+                <aside class="sidebar-right">
+                    <nav class="toc">
+                        <p>on this page</p>
+                        <ul class="toc-list">
+                            <!-- TOC -->
+                        </ul>
+                    </nav>
+                </aside>
+                </div>
             </div>
-        </div>
+        </main>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tocElement = document.getElementById('toc');
-            const headings = document.querySelectorAll('.content h1, .content h2, .content h3, .content h4, .content h5, .content h6');
-            let tocHTML = '';
-
-            headings.forEach(function(heading) {
-                const id = heading.textContent.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
-                heading.setAttribute('id', id);
-                const level = parseInt(heading.tagName.substring(1));
-                const indent = '&nbsp;'.repeat((level - 1) * 2);
-                tocHTML += `<li><a href="#${id}">${indent}${heading.textContent}</a></li>`;
-            });
-
-            tocElement.innerHTML = tocHTML;
-        });
-    </script>
-    
-    <!-- LATEX -->
-    <script>
-        MathJax = {
-          tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']]
-          },
-          svg: {
-            fontCache: 'global'
-          }
-        };
-      </script>
-      <script type="text/javascript" id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-      </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

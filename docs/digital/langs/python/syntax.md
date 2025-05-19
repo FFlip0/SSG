@@ -1,5 +1,4 @@
 ---
-title: title
+title: syntax
 layout: yo
 ---
-

@@ -2,8 +2,18 @@
 title: terminal
 layout: yo
 ---
+# packet managers
+- winget
+- chocolatey
+- scoop
+- ninite
+- pacman (MSYS2)
+
+
+
 # $variables
-Basically $variable is a variable you can use in terminal like:
+Basically `$variable` is a variable you can use in terminal like:
+
 ` $varible = "value" `
 There are also pre-set values like 
 
@@ -15,37 +25,51 @@ There are also pre-set values like
 | `$DATE`                        | date (placeholder varible)                 |                                                                                |
 | `$TIME`                        | time (placeholder varible)                 |                                                                                |
 
+
 Also the `$env:` represent a environment variable which basically means it works outside PowerShell too at "the OS level."
 
 
 
 # My Table
 
-# General files & folders
+## dash things
 
-| Command (pwsh) | Alias (cmd) | Syntax | Description |
-| -------------- | ----------- | ------ | ----------- |
-|                | dir         |        |             |
-|                | cd          |        |             |
-|                | ls          |        |             |
-|                | sl          |        |             |
-|                | h           |        |             |
-|                | mkdir       |        |             |
-|                | rmdir       |        |             |
-|                | move        |        |             |
-|                | mv          |        |             |
-|                | ren         |        |             |
-|                | echo        |        |             |
-|                |             |        |             |
-|                |             |        |             |
 
-## Process (App) Related 
+| full name | short |
+| --------- | ----- |
+| -Force    | -f    |
+| -Recurse  | -r    |
+|           |       |
 
-| Command (pwsh) | Alias (cmd) | Syntax | Description |
-| -------------- | ----------- | ------ | ----------- |
-| Get-Process    | gps         |        |             |
-| Stop-Process   | spps, kill  |        |             |
-| Start-Proccess | saps        |        |             |
+
+## General files & folders
+
+
+| Command (pwsh)  | Alias (cmd)     | Syntax                                | Description                                     |
+| --------------- | --------------- | ------------------------------------- | ----------------------------------------------- |
+|                 | echo            |                                       |                                                 |
+|                 | h               |                                       |                                                 |
+| `Get-ChildItem` | dir, ls, gci    |                                       |                                                 |
+| `Set-Location`  | cd, sl          |                                       |                                                 |
+|                 |                 |                                       |                                                 |
+| `New-Item`      | `ni`            |                                       |                                                 |
+| `Move-Item`     | `mv`, `move`    |                                       |                                                 |
+| `Remove-Item`   | `rm`, `rmdir`   |                                       |                                                 |
+|                 | `md`, `mkdir`   |                                       |                                                 |
+| `Rename-Item`   | ren             | `ren {oldName} {newName}`             |                                                 |
+| `Copy-Item`     | cp, copy        | `cp/copy {file/folder} {newFileName}` |                                                 |
+|                 |                 |                                       |                                                 |
+| `Set-Content`   | sc              | `sc {file} {string}`                  | Sets the contents of the file to the `(string)` |
+| `Get-Content`   | type, cat       | `type/cat {file}`                     | A basic way to view the inside of a file        |
+| `Clear-Content` | clc             | `clc {file}`                          | Clears the content of the file.                 |
+|                 |                 |                                       |                                                 |
+| `Start-Process` | `start`, `saps` |                                       |                                                 |
+| `Get-Process`   | gps             |                                       |                                                 |
+| `Stop-Process`  | spps, kill      |                                       |                                                 |
+|                 |                 |                                       |                                                 |
+|                 |                 |                                       |                                                 |
+
+
 # All Get-Alias Table 
 
 | Alias (cmd) | Command (pwsh)                 |
