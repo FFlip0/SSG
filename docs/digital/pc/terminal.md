@@ -236,4 +236,14 @@ Also the `$env:` represent a environment variable which basically means it works
 
 # commands
 
-## `cls` / `Clear-Host`
+## `Get-ChildItem`, `dir`, `ls`, `gci`
+
+
+| attribute | description           |
+| --------- | --------------------- |
+| `d-----`  | directory             |
+| `r-----`  | read only             |
+| `-a----`  | archive (normal) file |
+| `--s---`  | system file           |
+| `---h--`  | hidden file           |
+
