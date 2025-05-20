@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-                
         :root {
             --border: 1px solid #444;
             --border-radius: 0.25rem;
@@ -45,7 +44,6 @@
             text-decoration: none;
             transition: color 0.2s ease;
         }
-
         a:hover {
             color: var(--text-color);
             text-decoration: underline;
@@ -61,19 +59,12 @@
             margin: 0 0 1.5rem 1.5rem;
             padding: 0;
         }
-
         li {
             margin-bottom: 0.5rem;
             line-height: 1.6;
         }
-
-        ul {
-            list-style-type: disc;
-        }
-
-        ol {
-            list-style-type: decimal;
-        }
+        ul { list-style-type: disc; }
+        ol { list-style-type: decimal; }
 
         /* Code & Preformatted Text */
         code {
@@ -83,7 +74,6 @@
             border-radius: 3px;
             font-size: 0.9em;
         }
-
         pre {
             background: var(--bg2);
             padding: 1rem;
@@ -91,12 +81,10 @@
             overflow-x: auto;
             margin: 0 0 1.5rem;
         }
-
         pre code {
             background: none;
             padding: 0;
         }
-
         blockquote {
             border-left: 4px solid var(--accent);
             margin: 1.5rem 0;
@@ -121,7 +109,6 @@
             font-size: 1rem;
             transition: border-color 0.2s ease;
         }
-
         input[type="text"]:focus,
         input[type="email"]:focus,
         input[type="password"]:focus,
@@ -130,12 +117,10 @@
             border-color: var(--accent);
             box-shadow: 0 0 0 2px rgba(93, 153, 218, 0.2);
         }
-
         textarea {
             min-height: 120px;
             resize: vertical;
         }
-
         button {
             display: inline-block;
             padding: 0.75rem 1.5rem;
@@ -148,15 +133,8 @@
             cursor: pointer;
             transition: background-color 0.2s ease, transform 0.1s ease;
         }
-
-        button:hover {
-            background: var(--accent);
-            transform: translateY(-2.5px);
-        }
-
-        button:active {
-            transform: translateY(1px);
-        }
+        button:hover { background: var(--accent); transform: translateY(-2.5px); }
+        button:active { transform: translateY(1px); }
 
         /* Tables */
         table {
@@ -164,27 +142,17 @@
             background: transparent;
             overflow: hidden;
         }
-
         th, td {
             padding: 0.75rem 1rem; 
             border: var(--border);
         }
-
-
         th {
             background: var(--bg2);
             font-weight: bold;
         }
 
-
-
-
-
-
-        ::-webkit-scrollbar {
-            opacity: 0;
-        }
-
+        /* Scrollbar */
+        ::-webkit-scrollbar { opacity: 0; }
 
         /* Layout */
         .container {
@@ -196,7 +164,6 @@
             overflow: hidden;
             padding: 0 3rem;
         }
-
         .content-wrapper {
             display: flex;
             position: relative;
@@ -205,13 +172,11 @@
             padding: 0 1rem;
             justify-content: space-between;
         }
-
         .content-area {
             max-width: 800px;
             padding: 1.25rem 0;
             width: calc(100% - 18rem);
         }
-
         .content-area h1,
         .content-area h2,
         .content-area h3,
@@ -224,16 +189,13 @@
             display: block;
         }
 
-
-
+        /* Sidebars */
         .sidebar-left,
         .sidebar-right {
             background-color: transparent;
             display: flex;
             flex-direction: column;
         }
-
-
         .sidebar-right {
             position: sticky;
             top: 5rem;
@@ -246,21 +208,13 @@
             z-index: 100;
             flex-shrink: 0;
         }
-
-        .sidebar-right::-webkit-scrollbar {
-            width: 4px;
-        }
-
+        .sidebar-right::-webkit-scrollbar { width: 4px; }
         .sidebar-right::-webkit-scrollbar-thumb {
             background-color: var(--accent);
             border-radius: 2px;
         }
-
         .sidebar-left h2,
-        .sidebar-right h2 {
-            margin-bottom: 1rem;
-        }
-
+        .sidebar-right h2 { margin-bottom: 1rem; }
         .sidebar-left nav {
             flex-grow: 1;
             display: flex;
@@ -268,71 +222,67 @@
             gap: 0.75rem;
         }
 
-
-
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
+            .container { grid-template-columns: 1fr; }
             .sidebar-left,
-            .sidebar-right {
-                display: none;
-            }
-            .content-wrapper {
-                grid-template-columns: 1fr;
-            }
+            .sidebar-right { display: none; }
+            .content-wrapper { grid-template-columns: 1fr; }
         }
-
         @media (min-width: 1024px) {
-            .sidebar-left {
-                padding-left: 1rem;
-            }
-            .sidebar-right {
-                padding-right: 2rem;
-            }
+            .sidebar-left { padding-left: 1rem; }
+            .sidebar-right { padding-right: 2rem; }
         }
 
-        .content-area h1, 
-        .content-area h2, 
-        .content-area h3,
-        .content-area h4,
-        .content-area h5,
-        .content-area h6 {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
+        /* Table of Contents */
+        .toc {
+            position: relative;
+            border-left: var(--border);
+            padding: 0 0 0 1rem;
+            overflow-y: auto;
+            overflow-x: hidden;
         }
-
-
-        .content-area h1 {
-            font-size: 2rem;
-            font-weight: 900;
+        .toc p { color: var(--accent); }
+        .toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-
-        .content-area h2 {
-            font-size: 1.8rem;
-            font-weight: 800;
+        .toc-list a {
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            margin-left: -1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-color);
+            transition: all 0.2s ease;
         }
-
-        .content-area h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
+        .toc-list a:hover { color: var(--accent); }
+        .toc-list .toc-h1 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
         }
-
-        .content-area h4 {
-            font-size: 1.4rem;
+        .toc-list .toc-h2 {
+            margin-left: 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        .toc-list .toc-h3 {
+            margin-left: 2rem;
+            font-size: 0.85rem;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+        .toc-list a.active {
+            color: var(--accent);
             font-weight: 600;
         }
 
-        .content-area h5 {
-            font-size: 1.2rem;
-            font-weight: 500;
-        }
-
-        .content-area h6 {
-            font-size: 1rem;
-            font-weight: 400;
-        }
+        /* Navigation */
         .main-nav {
             background-color: transparent;
             padding: 0.75rem;
@@ -343,17 +293,14 @@
             align-items: center;
             border-bottom: var(--border);
         }
-
         .nav-left {
             font-size: 1.1rem;
             font-weight: 500;
         }
-
         .nav-right {
             display: flex;
             justify-content: flex-end;
         }
-
         .home-btn {
             text-decoration: none;
             padding: 0.5rem;
@@ -362,21 +309,12 @@
             align-items: center;
             justify-content: center;
         }
-
         .home-btn .material-icons {
             font-size: 1.5rem;
             transition: transform 0.2s ease;
             color: var(--text-color);
         }
-
-
-
-        .home-btn:hover .material-icons {
-            color: var(--accent);
-        }
-
-
-
+        .home-btn:hover .material-icons { color: var(--accent); }
 
         .main-nav a {
             text-decoration: none;
@@ -384,74 +322,22 @@
             font-weight: 500;
         }
 
-        .toc {
-            position: relative;
-            border-left: var(--border);
-            padding: 0 0 0 1rem;
-            overflow-y: auto;
-            overflow-x: hidden;
-
+        /* Headings */
+        .content-area h1, 
+        .content-area h2, 
+        .content-area h3,
+        .content-area h4,
+        .content-area h5,
+        .content-area h6 {
+            margin: 1rem 0;
+            padding-bottom: 0.5rem;
         }
-
-        .toc p {
-            color: var(--accent);
-        }
-
-        .toc-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .toc-list a {
-            text-decoration: none;
-            display: block;
-            padding: 0.25rem 0;
-            font-size: 0.875rem;
-            color: var(--text-color);
-        }
-
-        .toc-list a {
-            text-decoration: none;
-            display: block;
-            padding: 0.5rem 0.5rem 0.5rem 1rem;
-            margin-left: -1rem;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-
-        .toc-list a:hover {
-            color: var(--accent);
-        }
-
-        .toc-list .toc-h1 {
-            font-size: 0.95rem;
-            font-weight: 600;
-            margin: 0.5rem 0;
-        }
-
-        .toc-list .toc-h2 {
-            margin-left: 1rem;
-            font-size: 0.9rem;
-            font-weight: 500;
-            opacity: 0.9;
-        }
-
-        .toc-list .toc-h3 {
-            margin-left: 2rem;
-            font-size: 0.85rem;
-            font-weight: 400;
-            opacity: 0.8;
-        }
-
-        .toc-list a.active {
-            color: var(--accent);
-            font-weight: 600;
-        }
-
-
+        .content-area h1 { font-size: 2rem; font-weight: 900; }
+        .content-area h2 { font-size: 1.8rem; font-weight: 800; }
+        .content-area h3 { font-size: 1.6rem; font-weight: 700; }
+        .content-area h4 { font-size: 1.4rem; font-weight: 600; }
+        .content-area h5 { font-size: 1.2rem; font-weight: 500; }
+        .content-area h6 { font-size: 1rem; font-weight: 400; }
     </style>
 </head>
 <body>
@@ -462,12 +348,11 @@
                     {{ page.path }}
                 </div>
                 <div class="nav-right">
-                    <a href="{{ site.baseurl }}" class="home-btn">
+                    <a href="#" class="home-btn">
                         <span class="material-icons">home</span>
                     </a>
                 </div>
             </nav>
-
             <div class="content-wrapper">
                 <div class="content-area">
                     {{ content }}
@@ -480,15 +365,13 @@
                         </ul>
                     </nav>
                 </aside>
-
                 </div>
-                
-
             </div>
         </main>
     </div>
+
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
     const tocList = document.querySelector('.toc-list');
     console.log('TOC list element:', tocList);
     
