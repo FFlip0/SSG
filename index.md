@@ -10,6 +10,7 @@ layout: yo
 - # docs
 	- ## digital
 		- [random](docs/digital/random.md)
+		- [iGotBored](docs/digital/iGotBored.md)
 		- [cryptography](docs/digital/cryptography.md)
 		- ### langs
 			- #### python
