@@ -1,13 +1,17 @@
 ---
-title: terminal
+title: -terminal
 layout: yo
 ---
+> Related Pages: [bash](bash.md), [commandPrompt](commandPrompt.md), [powershell](powershell.md)
+
+
 # packet managers
 - winget
 - chocolatey
 - scoop
 - ninite
 - pacman (MSYS2)
+- cargo (rust)
 
 
 
