@@ -1,5 +1,5 @@
 ---
-title: file formats
+title: fileFormats
 layout: yo
 ---
 
@@ -11,6 +11,7 @@ layout: yo
 |        `.apk` | Android Package Kit                                         | Android app installer            |
 |        `.cpp` | C++ Source File                                             | Coding Language                  |
 |        `.css` | Cascading Style Sheets                                      | Coding Language                  |
+|        `.bat` | Batch                                                       | Batch file                       |
 |        `.doc` | Document                                                    | Older version of Microsoft Word  |
 |       `.docx` | Document                                                    | Newer version of Microsoft Word  |
 |        `.exe` | Executable                                                  | Executable file                  |
@@ -29,8 +30,10 @@ layout: yo
 |        `.otf` | Open Type Font                                              | Font file                        |
 |        `.pdf` | Portable Document Format                                    | Document file                    |
 |        `.png` | Portable Network Graphics4                                  | Image file (yes transparency)    |
+|        `.ps1` | PowerShell                                                  | PowerShell script file           |
 |         `.py` | Python Script                                               | Coding language                  |
 |        `.rar` | Roshal Archive                                              | Compressed file                  |
+|         `.sh` | Shell                                                       | Bash script                      |
 |        `.svg` | Scalable Vector Graphics                                    | Vector (Image)                   |
 |     `.tar.gz` | Tape Archive compressed with Gzip                           | Compression file                 |
 |         `.ts` | TypeScript File                                             | Coding language                  |

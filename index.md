@@ -1,45 +1,48 @@
 ---
-title: home
+title: index
 layout: yo
 ---
 
-Files that have a dash (-) in front of them are pinned.
-
-- # docs
-	- ## digital
-		- [random](docs/digital/random.md)
-		- [iGotBored](docs/digital/iGotBored.md)
-		- [cryptography](docs/digital/cryptography.md)
-		- ### langs
-			- #### python
-				- [pip](docs/digital/langs/python/pip.md)
-				- [syntax](docs/digital/langs/python/syntax.md)
-		- ### linux
-			- [-linux](docs/digital/linux/-linux.md)
-		 - ### networking
-			- [protocols and ports](docs/digital/networking/protocolsAndPorts.md)
-		- ### pc
-			- [file formats](docs/digital/pc/fileFormats.md)
-			- [text characters](docs/digital/pc/textCharacters)
-			- #### terminal
-				- [-terminal](docs/digital/pc/terminal/-terminal.md)
-				- [bash](docs/digital/pc/terminal/bash.md)
-				- [commandPrompt](docs/digital/pc/terminal/commandPrompt.md)
-				- [powershell](docs/digital/pc/terminal/powershell.md)
-
-	- ## math
-		- [random](docs/math/random.md)
-	- ## science
-		- [earth](docs/science/earth.md)
-- # notes
-	- ## digital
-		- [CompTIASecurityPlusSYO-701](notes/digital/CompTIASecurityPlusSYO-701.md)
-		- 
-- # misc.
-	- [syntax](misc/syntax.md)
- 
+Files that have a dash (-) in front of them are pinned. 
+everything should be sorted in alphabetical..
 
 
 
+docs
+- # digital
+	- [random](digital/random.md)
+	- [iGotBored](digital/iGotBored.md)
+	- [cryptography](digital/cryptography.md)
+	- ## programming
+	- [generalCoding](digital/coding/generalCoding.md)
+		- ### python
+		- [pip](digital/coding/python/pip.md)
+		- [syntax](digital/coding/python/syntax.md)
+	- ## linux
+	- [-linux](digital/linux/-linux.md)
+	- [packageMangers](digital/linux/packageMangers.md)
+	- ## networking
+	- [protocolsAndPorts](digital/networking/protocolsAndPorts.md)
+	- ## pc
+	- [fileFormats](digital/pc/fileFormats.md)
+	- [textCharacters](digital/pc/textCharacters.md)
+		- ### terminal
+		- [-terminal](digital/pc/terminal/-terminal.md)
+		- [bash](digital/pc/terminal/bash.md)
+		- [commandPrompt](digital/pc/terminal/commandPrompt.md)
+		- [powershell](digital/pc/terminal/powershell.md)
+			- #### tools
+			- [git](digital/pc/terminal/tools/git.md)
+- # math
+	- [random](math/random.md)
+- # science
+	- [earth](science/earth.md)
+
+
+---
+- # -misc.
+	- [jekyllLiquidTags](-misc/jekyllLiquidTags.md)
+	- [misc](-misc/misc.md)
+	- [syntax](-misc/syntax.md)
 ---
 

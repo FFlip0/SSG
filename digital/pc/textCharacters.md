@@ -1,5 +1,5 @@
 ---
-title: text characters
+title: textCharacters
 layout: yo
 ---
 
