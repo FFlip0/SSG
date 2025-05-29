@@ -39,18 +39,6 @@ Displays content of site (layout only):
 {{ site.pages }}
 
 
----
-
-Include 1
-`{% include "includeFile.html"%}`
-{% include "includeFile.html" %}
-
-Include 2
-`{% include "includeFile.md"%}`
-{% include "includeFile.md" %}
-
-
-
 
 
 
