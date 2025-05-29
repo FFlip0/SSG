@@ -51,7 +51,7 @@ Include 2
 
 
 
-{% toc %}
+`{% toc %}`
 
 
 
