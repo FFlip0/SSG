@@ -17,6 +17,8 @@ defaults:
       path: ""
     values:
       toc: true
+      toc_sticky: true
+
 
 toc:
   min_level: 1

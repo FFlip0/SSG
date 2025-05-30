@@ -360,15 +360,28 @@
             <div class="content-wrapper">
                 <div class="content-area">
                     {{ content}}
+                    
+                    {{ toc }}
+                    {:toc}
+{% toc %}
+                    {% if page.toc %}
+                    {{ toc }}
+                    {% endif %}
                 </div>
                 <aside class="sidebar-right">
                     {{ toc }}
                     {:toc}
+{% toc %}
+                    {% if page.toc %}
+                    {{ toc }}
+                    {% endif %}
 
+<!--
                     <nav class="toc">
-			<p>on this page</p>
-			<ul class="toc-list"><!-- TOC --></ul>
-		    </nav>
+                        <p>on this page</p>
+                        <ul class="toc-list"></ul>
+                    </nav>
+-->
                 </aside>
                 </div>
             </div>
