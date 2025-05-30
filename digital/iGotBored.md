@@ -1,6 +1,7 @@
 ---
 title: iGotBored
 layout: yo
+toc: true
 ---
 was bored so i asked ai to teach me stuff:
 
