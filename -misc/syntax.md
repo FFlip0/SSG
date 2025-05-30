@@ -1,6 +1,7 @@
 ---
 title: title
 layout: yo
+toc: true
 ---
 
 

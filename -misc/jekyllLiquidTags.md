@@ -5,19 +5,27 @@ layout: yo
 
 
 Displays content of site (layout only): 
-`{{ content }}`
+```
+{{ content }}
+```
 
 ---
 # (page.) Current page data
 
 
-`{{ page.url }}`
+```
+{{ page.url }}
+```
 {{ page.url }}
 
-`{{ page.path }}`
+```
+{{ page.path }}
+```
 {{ page.path }}
 
-`{{ page.author }}`
+```
+{{ page.author }}
+```
 {{ page.author }} 
 
 
@@ -26,20 +34,25 @@ Displays content of site (layout only):
 ---
 # (site.) Global site data
 
-`{{ site.url }}`
+```
+{{ site.url }}
+```
 {{ site.url }}
 
-`{{ site.title }}`
+```
+{{ site.title }}
+```
 {{ site.title }}
 
-`{{ site.description }}`
+```
+{{ site.description }}
+```
 {{ site.description }}
 
-`{{ site.pages }}
+```
 {{ site.pages }}
-
-
-
+```
+{{ site.pages }}
 
 
 

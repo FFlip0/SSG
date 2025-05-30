@@ -6,6 +6,7 @@ url: "https://fflip0.github.io/SSG/"
 theme: null
 plugins:
   - jekyll-feed
+  - jekyll-toc
 
 markdown: kramdown
 kramdown:

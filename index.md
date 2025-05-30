@@ -44,5 +44,6 @@ docs
 	- [jekyllLiquidTags](-misc/jekyllLiquidTags.md)
 	- [misc](-misc/misc.md)
 	- [syntax](-misc/syntax.md)
+
 ---
 
