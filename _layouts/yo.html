@@ -239,7 +239,6 @@
 
 
         /* Table of Contents */
-        /*
         .toc {
             position: relative;
             border-left: var(--border);
@@ -286,7 +285,6 @@
             color: var(--accent);
             font-weight: 600;
         }
-        */
 
         /* Navigation */
         .main-nav {
@@ -352,40 +350,25 @@
             <nav class="main-nav">
                 <div class="nav-left">{{ page.path }}</div>
                 <div class="nav-right">
-                    <a href="#" class="home-btn">
+                    <a href="{{ site.baseurl }}" class="home-btn">
                         <span class="material-icons">home</span>
                     </a>
                 </div>
             </nav>
             <div class="content-wrapper">
                 <div class="content-area">
-                    {{ content | toc_only }}
-                    
-                    {{ toc }}
-                    {:toc}
-                    {% if page.toc %}
-                    {{ toc }}
-                    {% endif %}
+                    {{ content }}
                 </div>
                 <aside class="sidebar-right">
-                    {{ toc }}
-                    {:toc}
-                    {% if page.toc %}
-                    {{ toc }}
-                    {% endif %}
-
-<!--
                     <nav class="toc">
                         <p>on this page</p>
                         <ul class="toc-list"></ul>
                     </nav>
--->
                 </aside>
                 </div>
             </div>
         </main>
     </div>
-<!--
     <script>
         document.addEventListener('DOMContentLoaded', function() {
     const tocList = document.querySelector('.toc-list');
@@ -435,6 +418,5 @@
 });
 
     </script>
--->
 </body>
 </html>
