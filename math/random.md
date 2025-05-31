@@ -5,9 +5,6 @@ layout: yo
 
 
 
-# Random 
-
-
 
 
 # Formulas

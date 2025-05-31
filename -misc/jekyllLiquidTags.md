@@ -1,32 +1,30 @@
 ---
 title: jekyll
 layout: yo
+author: flip
 ---
 
 
-Displays content of site (layout only): 
-```
-{{ content }}
-```
+
 
 ---
 # (page.) Current page data
 
 
-```
+page.url:
+```liquid
 {{ page.url }}
 ```
-{{ page.url }}
 
-```
+page.path:
+```liquid
 {{ page.path }}
 ```
-{{ page.path }}
 
-```
+page.author:
+```liquid
 {{ page.author }}
 ```
-{{ page.author }} 
 
 
 
@@ -34,26 +32,38 @@ Displays content of site (layout only):
 ---
 # (site.) Global site data
 
-```
-{{ site.url }}
-```
-{{ site.url }}
-
-```
+site.title:
+```liquid
 {{ site.title }}
 ```
-{{ site.title }}
 
-```
+site.description:
+```liquid
 {{ site.description }}
 ```
-{{ site.description }}
 
+site.url:
+```liquid
+{{ site.url }}
 ```
+
+site.baseurl:
+```liquid
+{{ site.baseurl }}
+```
+
+site.pages:
+```liquid
 {{ site.pages }}
 ```
-{{ site.pages }}
 
+site. author:
+```liquid
+{{ site.author }}
+```
 
-
+site.time:
+```liquid
+{{ site.time }}
+```
 

@@ -2,7 +2,6 @@
 title: pip
 layout: yo
 ---
-# pip
 
 
 | Package Name  | Description |
