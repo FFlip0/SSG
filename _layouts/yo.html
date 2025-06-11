@@ -364,7 +364,7 @@
             </nav>
             <div class="content-wrapper">
                 <div class="content-area">
-                    <h1 class="title">{{ page.path | split: "/" | last }}</h1>
+                    <h1 class="title">{{ page.path | split: "/" | last | replace: ".md", "" }}</h1>
                     <hr>
                     {{ content }}
                 </div>

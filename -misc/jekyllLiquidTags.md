@@ -7,7 +7,7 @@ author: flip
 
 
 
----
+
 # (page.) Current page data
 
 
@@ -50,11 +50,6 @@ site.url:
 site.baseurl:
 ```liquid
 {{ site.baseurl }}
-```
-
-site.pages:
-```liquid
-{{ site.pages }}
 ```
 
 site. author:

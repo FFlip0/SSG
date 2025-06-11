@@ -2,17 +2,19 @@
 title: index
 layout: yo
 ---
+awesome resources: [CK-12 (academic)](https://www.ck12.org/), [roadmap.sh (IT Pathways)](https://roadmap.sh/)
 
 Files that have a dash (-) in front of them are pinned. 
-everything should be sorted in alphabetical..
-
-
+everything should be sorted in alphabetical (probably isnt though)
 
 docs
 - # digital
 	- [random](digital/random.md)
 	- [iGotBored](digital/iGotBored.md)
 	- [cryptography](digital/cryptography.md)
+	- ## -misc
+		- ### roadmap.sh
+			- [cyberSecurity](digital/-misc/roadmap.sh/cyberSecurity.md)
 	- ## programming
 	- [generalCoding](digital/coding/generalCoding.md)
 		- ### python
@@ -37,6 +39,13 @@ docs
 	- [random](math/random.md)
 - # science
 	- [earth](science/earth.md)
+	- ## biology
+	- [-random](science/biology/-random.md)
+	- [cells](science/biology/cells.md)
+	- ## physics
+	- [-random](science/physics/-random.md)
+	- ## psychology
+	- [-random](science/psychology/-random.md)
 
 
 ---
@@ -44,6 +53,4 @@ docs
 	- [jekyllLiquidTags](-misc/jekyllLiquidTags.md)
 	- [misc](-misc/misc.md)
 	- [syntax](-misc/syntax.md)
-
----
 

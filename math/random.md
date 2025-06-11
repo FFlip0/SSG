@@ -6,7 +6,64 @@ layout: yo
 
 
 
-
+# map
+- Basic
+	- Counting
+	- Addition, subtraction, multiplication and division
+	- Whole numbers, Integers, decimals
+	- Prime numbers, even/odd numbers
+	- Factors and Multiples
+- Pre-Algebra
+	- Fractions
+		- Percentages
+	- Ratios
+	- Proportions
+	- Order Of Operations (BODMAS)
+- Algebra 1
+	- Variables (xyz)
+	- Inequalities
+	- Exponents and Surds
+	- Substitution and Elimination
+	- Linear equations
+	- Polynomials
+	- Quadratic equations
+	- Graphing Linear and Quadratic
+- Geometry
+	- Area's of 2D and 3D shapes/objects
+	- Circles, Spheres Cylinders 
+	- "Coordinate Geometry"
+		- Graphing Linear and Quadratic equations (slope, distance, midpoint)
+	- Right angle triangle trigonometry
+	- Non-right angle trigonometry (sine rule, cos rule)
+- Algebra 2
+	- Functions (Linear, Quadratics and exponential)
+	- Complex Numbers
+	- Imaginary Numbers
+	- Advanced polynomials (factor theorem, synthetic division)
+	- Sequences and series (arithmetic/geometric sequences)
+	- Probability (combinations and permutations)
+- Pre-calculus
+	- Advanced Trigonometry (unit circle, trig identities)
+	- Graphing types of functions
+	- Conic Sections (parabolas, ellipses, hyperbolas)
+	- Limits
+	- Vector and matrix operations
+	- Derivatives and rate of change
+- Calculus
+	- 1 Differential Calculus
+		- Limits
+		- Derivatives
+		- First Principle
+		- Rules of differentiations (power, chain, product, quotient rule)
+	- 2 Integral Calculus
+		- Antiderivatives 
+		- Basic Integration
+		- Definite and indefinite intergrals
+		- Fundamental Theorem of Calculus
+	- 3 Advacned Calculus
+		- Partial Derivatives
+		- Differential equations
+		- Infinite series 
 # Formulas
 ## Linear Equations
 
